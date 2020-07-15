@@ -31,9 +31,10 @@
     justify-content: center;
     align-items: center;
     font-family: 'Biryani', sans-serif;
-    font-size: 5em;
+    font-size: 5vw;
     text-align: center;
-    font-weight: 900; 
+    font-weight: 900;
+    margin: 0px;
 }
 
 .landing-comentario{
@@ -45,10 +46,4 @@
     font-family: 'Biryani', sans-serif;
     text-align: center;
     font-weight: 300;
-}
-
-.logo{
-    max-height: 300px;
-    max-width: 300px;
-    margin: 0px;
 }
