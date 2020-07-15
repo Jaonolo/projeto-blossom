@@ -1,4 +1,5 @@
 import React from "react"
+import "../components/layout.css"
 import PadrãoTemplate from '../templates/padrão/padrão.template'
 import LandingContainer from "../container/landing/landing.container"
 
