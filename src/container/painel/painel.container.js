@@ -37,21 +37,21 @@ export default class PainelComponent extends Component{
                 cor: "#a83b42",
                 direção: "row-reverse",
                 imagem: imagem2,
-                descrição: "Criada com um norte completamente voltado ao ensino de desenvolvimento de software, a linguagem de programação Blossom nasceu para suprir uma grande dificuldade desse meio para muitas pessoas: a acessibilidade."
+                descrição: "Constantemente atualizada com o máximo de novos perks das mais novas linguagens. Assim, um programador que aprendera em Blossom facilmente se adapta a novas linguagens."
             },
             {
                 título: "Suporte para diversas línguas",
                 cor: "#fff5fe",
                 texto: "#151323",
                 imagem: imagem3,
-                descrição: "Criada com um norte completamente voltado ao ensino de desenvolvimento de software, a linguagem de programação Blossom nasceu para suprir uma grande dificuldade desse meio para muitas pessoas: a acessibilidade."
+                descrição: "Com o objetivo de espalhar o desenvolvimento de sofware, Blossom tem uma equipe constantemente buscando novas línguas para traduzir suas funções e recursos."
             },
             {
                 título: "A melhor porta de entrada possível!",
                 cor: "#151323",
                 direção: "row-reverse",
                 imagem: imagem4,
-                descrição: "Criada com um norte completamente voltado ao ensino de desenvolvimento de software, a linguagem de programação Blossom nasceu para suprir uma grande dificuldade desse meio para muitas pessoas: a acessibilidade."
+                descrição: "A proposta da Blossom é, fazendo referência a obra de animação Rattatouille, qualquer um pode programar! E facilitaremos o caminho dos que querem começar o máximo possível"
             }
         ]
         return(

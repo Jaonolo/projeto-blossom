@@ -45,7 +45,8 @@ export default class CabeçalhoContainer extends Component{
             },
             {
                 título: "Documentação",
-                link: "/documentação"
+                // link: "/documentação"
+                link: "https://github.com/Jaonolo/Projeto-Blossom/blob/master/README.md"
             },
             {
                 título: "Download",
