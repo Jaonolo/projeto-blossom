@@ -1,12 +1,19 @@
 import React from "react"
 import PadrãoTemplate from "../templates/padrão/padrão.template"
-import LandingContainer from "../container/landing/landing.container"
 import "./404.style.scss"
+import "./download.style.scss"
 
 const DownloadPage = () => (
   <PadrãoTemplate>
-    <div className="página_404">
-      <LandingContainer></LandingContainer>
+    <div className="download">
+        <div className="download_conteúdo">
+            <h1 className="download_título">Faça o download da<br></br>última versão já!</h1>
+            <a href="https://github.com/Jaonolo/Projeto-Blossom/archive/master.zip">
+                <div className="download_botão">
+                    <h1 className="download_botão_título">Download</h1>
+                </div>
+            </a>
+        </div>
     </div>
   </PadrãoTemplate>
 )

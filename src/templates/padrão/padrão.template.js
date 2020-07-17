@@ -7,7 +7,7 @@ export default class PadrãoTemplate extends Component{
         return(
         <div>
             <CabeçalhoContainer></CabeçalhoContainer>
-            <div>{this.props.children}</div>
+            <div style={{height: "fit-content"}}>{this.props.children}</div>
             <RodapéContainer></RodapéContainer>
         </div>
         )

@@ -4,7 +4,6 @@ module.exports = {
     description: `Um site brabo do brabo, projeto final da parte de aprendizado do estágio da SFLabs`,
     author: `@Jaonolo`,
   },
-  pathPrefix: `/blossom`,
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,

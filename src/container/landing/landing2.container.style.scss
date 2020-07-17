@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap');
+@import url('../../templates/paleta.template.style.scss');
+
+.landing2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(80vh - 95px);
+    // min-height: 412px;
+    overflow: hidden;
+    background-image: url("../../images/landing.webp");
+    background-image: linear-gradient(#151323ff, #a5cff022), url("../../images/landing.webp");
+    background-size: cover;
+}
+
+@keyframes aparecer{
+    0% {
+        opacity: 0%;
+        transform: translateY(26%);
+    };
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    };
+}
+
+.landing2_conteúdo{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    animation: 1.125s ease-out 50ms 1 aparecer;
+}
+
+.landing2_título{
+    margin-bottom: 8px;
+    color: #fff5fe;
+    text-align: center;
+    font-family: 'Biryani', sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+    word-break: break-word;
+}
+
+.landing2_botão{
+    margin: 0px;
+    padding-top: 22px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #151323;
+    border-width: 0px;
+    border-radius: 5px;
+}
+
+.landing2_botão_título{
+    margin: 0px;
+    color: #fff5fe;
+    font-family: 'Biryani', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media only screen and (max-height: 600px){
+    .landing2_título{
+        font-size: 72px;
+        margin-bottom: 0px;
+    }
+    .landing2_botão_título{
+        font-size: 20px;
+    }
+    .landing2_botão{
+        padding-top: 18px;
+    }
+}
+
+@media only screen and (max-height: 440px){
+    .landing2_título{
+        font-size: 16.36vh;
+    }
+    .landing2_botão_título{
+        font-size: 4.54vh;
+    }
+    .landing2_botão{
+        padding: 2.72vh;
+        padding-top: 4vh;
+    }
+}
