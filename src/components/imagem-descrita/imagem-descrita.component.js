@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const ImagemDescrita = ({url, titulo, content}){
-    return(
-        <div> 
-        </div>
-    )
+export default class ImagemDescritaComponent extends Component{
+    render(){
+        return(
+            <div className="imagem_descrita">
+                {this.props.children}
+            </div>
+        )
+    }
 }

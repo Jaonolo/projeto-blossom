@@ -1,10 +1,12 @@
 import React from "react"
-import PadrãoTemplate from "../templates/padrão/padrão.template"
+import CabeçalhoContainer from "../container/cabeçalho/cabeçalho.container"
+import RodapéContainer from "../container/rodapé/rodapé.container"
 import "./404.style.scss"
 const triste = require("../images/emoji_triste.svg")
 
 const NotFoundPage = () => (
-  <PadrãoTemplate>
+  <div>
+    <CabeçalhoContainer></CabeçalhoContainer>
     <div className="página_404">
       <div className="holder_404">
         <img src={triste} className="sadtimes"></img>
@@ -14,7 +16,8 @@ const NotFoundPage = () => (
         </div>
       </div>
     </div>
-  </PadrãoTemplate>
+    <RodapéContainer></RodapéContainer>
+  </div>
 )
 
 export default NotFoundPage

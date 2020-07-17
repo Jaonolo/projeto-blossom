@@ -1,29 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap');
 @import url('../../templates/paleta.template.style.scss');
 
 .cabeçalho{
+    position: sticky;
+    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     background-color: #151323;
     color: white;
-    height: 105px;
+    height: 95px;
     width: 100%;
-    padding: 15px;
+    padding-left: 25px;
+    padding-right: 40px;
 }
 
-.cabeçalho-logo{
-    max-height: 85px;
-    max-width: height;
+.cabeçalho_logo{
+    height: 75px;
+    width: 75px;
     margin: 0px;
 }
 
-.cabeçalho-home-link{
+.cabeçalho_logo_holder{
+    width: 50%;
+}
+
+.cabeçalho_home_link{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    width: fit-content;
+    height: fit-content;
 }
 
-// @media only screen and (max-width: 300px){
-// }
+.lista_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.lista_menu_botão{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Biryani', sans-serif;
+    margin-left: 25px;
+}
+
+.menu_botão_texto{
+    font-family: 'Biryani', sans-serif;
+    color: #fff5fe;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 590px){
+    .lista_menu_botão{
+        display: none;
+    }
+}

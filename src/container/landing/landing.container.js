@@ -1,14 +1,17 @@
 import React, {Component} from "react"
 import "./landing.container.style.scss"
-const logo = require("../../images/flower.svg")
 
 export default class LandingContainer extends Component{
     render(){
         return(
             <div className="landing">
-                <div className="landing-titulo-holder">
-                    <h1 className="landing-titulo">Ensinar Programação,<br></br>reinventado.</h1>
-                    {/* <h2 className="landing-comentario">Tecnology at its finest</h2> */}
+                <div className="landing_conteúdo">
+                    <h1 className="landing_título">Ensino de programação, <span className="landing_título_destaque">reinventado.</span></h1>
+                    <a href="/sobre">
+                        <div className="landing_botão">
+                            <h1 className="landing_botão_título">Saiba mais!</h1>
+                        </div>
+                    </a>
                 </div>
             </div>
         )

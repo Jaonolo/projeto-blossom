@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap');
+
+.imagem_descrita{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    font-family: 'Biryani', sans-serif;
+    color: #fff5fe;
+    text-align: start;
+    font-weight: 200;
+    font-size: 20px;
+}

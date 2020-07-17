@@ -2,48 +2,98 @@
 @import url('../../templates/paleta.template.style.scss');
 
 .landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: calc(100vh - 85px);
-    display: flex;
-    flex-direction: column;
+    height: calc(100vh - 95px);
+    // min-height: 412px;
+    overflow: hidden;
     background-image: url("../../images/landing.webp");
-    background-image: linear-gradient(#151323, #a5cff022), url("../../images/landing.webp");
+    background-image: linear-gradient(#151323ff, #a5cff022), url("../../images/landing.webp");
     background-size: cover;
-    justify-content: center;
-    align-items: center;
 }
 
-.landing-titulo-holder{
-    max-width: 1100px;
+@keyframes aparecer{
+    0% {
+        opacity: 0%;
+        transform: translateY(26%);
+    };
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    };
+}
+
+.landing_conteúdo{
+    margin: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1100px;
+    animation: 1.125s ease-out 50ms 1 aparecer;
 }
 
-.landing-titulo{
-    // background: -webkit-linear-gradient(#f44f5a, #c271eb, #12c0e7);
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
-    color: #12c0e7;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Biryani', sans-serif;
-    font-size: 5vw;
+.landing_título{
+    margin-bottom: 8px;
+    color: #fff5fe;
     text-align: center;
+    font-family: 'Biryani', sans-serif;
+    font-size: 90px;
     font-weight: 900;
-    margin: 0px;
+    word-break: break-word;
 }
 
-.landing-comentario{
-    color: #151323;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.landing_título_destaque{
+    color: #f44f5a
+}
+
+.landing_botão{
+    margin: 0px;
+    padding-top: 22px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #151323;
+    border-width: 0px;
+    border-radius: 5px;
+}
+
+.landing_botão_título{
+    margin: 0px;
+    color: #fff5fe;
     font-family: 'Biryani', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
     text-align: center;
-    font-weight: 300;
+}
+
+@media only screen and (max-height: 600px){
+    .landing_título{
+        font-size: 72px;
+        margin-bottom: 0px;
+    }
+    .landing_botão_título{
+        font-size: 20px;
+    }
+    .landing_botão{
+        padding-top: 18px;
+    }
+}
+
+@media only screen and (max-height: 440px){
+    .landing_título{
+        font-size: 16.36vh;
+    }
+    .landing_botão_título{
+        font-size: 4.54vh;
+    }
+    .landing_botão{
+        padding: 2.72vh;
+        padding-top: 4vh;
+    }
 }

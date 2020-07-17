@@ -5,7 +5,7 @@ export default class RodapéContainer extends Component{
     render(){
         return(
             <div className="rodapé">
-                Footer
+                teste
             </div>
         )
     }
